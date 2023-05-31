@@ -1,9 +1,29 @@
-import Image from 'next/image'
+import { Header } from '@/components/Header'
+import { SectionNft } from '@/components/SectionNft'
+import { SectionPopWeek } from '@/components/SectionPopWeek'
+import { SectionPresentation } from '@/components/SectionPresentation'
+import { SectionStatistics } from '@/components/SectionStatistics'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-     <h1>Hello World!</h1>
-    </main>
+    <>
+      <header>
+        <Header />
+      </header>
+      <main className='mt-20'>
+        <section>
+          <SectionPresentation />
+        </section>
+        <section className='mt-20'>
+          <SectionNft />
+        </section>
+        <section className='bg-body-background'>
+          <SectionStatistics />
+        </section>
+        <section>
+          <SectionPopWeek />
+        </section>
+      </main>
+    </>
   )
 }
