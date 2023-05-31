@@ -1,4 +1,5 @@
 import { Header } from '@/components/Header'
+import { SectionBestArtist } from '@/components/SectionBestArtist'
 import { SectionNft } from '@/components/SectionNft'
 import { SectionPopWeek } from '@/components/SectionPopWeek'
 import { SectionPresentation } from '@/components/SectionPresentation'
@@ -20,8 +21,11 @@ export default function Home() {
         <section className='bg-body-background'>
           <SectionStatistics />
         </section>
-        <section>
+        <section className='bg-body-background'>
           <SectionPopWeek />
+        </section>
+        <section className='bg-body-background'>
+          <SectionBestArtist />
         </section>
       </main>
     </>
